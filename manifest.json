@@ -1,0 +1,37 @@
+{
+    "name" : "upload Images",
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "description":"upload file extention",
+    "icons":{
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "16":"icon16.png"
+    },
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css":["style.css"]
+        }
+    ],
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_title":"upload Images",
+        "default_icon":"icon16.png"
+    },
+    "permissions":[
+        
+        "identity"
+    ],
+    "oauth2": {
+        "client_id": "1086002196619-b92oaff1jj047l008qgfe6kc8nf4fcgo.apps.googleusercontent.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/drive"
+        ]
+      }
+
+
+
+
+}
